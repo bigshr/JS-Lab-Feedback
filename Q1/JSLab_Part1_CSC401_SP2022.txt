@@ -1,0 +1,38 @@
+//Oshadhie Amarasekera 
+//CSC 401 : Spring 2022 
+//JSLab 
+//Question(1)
+
+let n = parseInt(prompt("Enter the value of n: "));
+const nums = [];
+
+
+for(let i = 0; i < n; i++){// Fills the array with random values
+    num = Math.floor(Math.random() * 20) + 1;
+    nums.push(num);
+}
+
+
+nums.sort((a,b) => (a - b));// Sorts the array
+
+
+const map = {};// Creates a count map
+for(let num of nums){
+    if (!map[num]){
+        map[num] = 1;
+    } else{
+        map[num] += 1;
+    }
+    // map[num] = 1 + (map[num] || 0);
+}
+
+
+let count = 0;
+for(let num in map){
+    if (map[num] == 1){
+        count += 1;
+    }
+}
+
+alert(nums);
+alert(count);
