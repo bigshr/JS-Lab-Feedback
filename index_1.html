@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Second Program</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><h1> JS Lab </h1></div>
+        <script>
+            let n=prompt("Please enter an integer: ");
+            let ar = Array.from(Array(n), () => new Array(n));
+            let color=['red','blue','yellow','green'];
+            for( let i=0; i<n; i++){
+                
+                ar[i]=[[Math.floor(Math.random()*10),color[Math.floor(Math.random()*4)]]];     
+                document.write(ar[i]+" <br> ");
+            }
+        </script>
+    </body>
+</html>
