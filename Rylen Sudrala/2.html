@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title>Part 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function get_random_int(low,high){
+                const range = high-low+1;
+                return Math.floor(Math.random()* range)+low;
+                        }
+            function twoArray(){
+                const user_input = prompt("Enter a Number");
+                const n = parseInt(user_input);
+                let arr = [];
+                for(let i = 0; i < n; i++){
+                    let current = [];
+                    for(let j = 0; j < n; j++)
+                        current.push(Math.floor(Math.random() * 10));
+                        arr.push(current);
+}
+                console.log(arr);
+/*
+                const user_input = prompt("Enter a Number");
+                const n = parseInt(user_input);
+                const m = n;
+                let arr = new Array(m);
+                for (var i = 0; i < m; i++) {
+                    arr[i] = new Array(n);
+
+            }
+                console.log(arr);*/
+            }
+            twoArray();
+
+</script>
+    </head>
+    <body>
+
+    </body>
+</html>
