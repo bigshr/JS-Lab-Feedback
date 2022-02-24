@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed');
+
+
+h1 {
+    color: #434356;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+}
+
+ h2 {
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* border: 2px solid black;
+    border-radius: 25px; */
+}
+
+html {
+    background-color: lightgray;
+}
